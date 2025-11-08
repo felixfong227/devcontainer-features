@@ -1,0 +1,25 @@
+{
+    "name": "git-spice",
+    "id": "git-spice",
+    "version": "2.0.4",
+    "description": "Installs git-spice",
+    "documentationURL": "",
+    "containerEnv": {
+        "HOMEBREW_PREFIX": "/home/linuxbrew/.linuxbrew",
+        "HOMEBREW_CELLAR": "/home/linuxbrew/.linuxbrew/Cellar",
+        "HOMEBREW_REPOSITORY": "/home/linuxbrew/.linuxbrew/Homebrew",
+        "PATH": "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:${PATH}",
+        "MANPATH": "/home/linuxbrew/.linuxbrew/share/man:${MANPATH}",
+        "INFOPATH": "/home/linuxbrew/.linuxbrew/share/info:${INFOPATH}"
+    },
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "0.18.0",
+            "description": "Install git-spice with the given version."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
